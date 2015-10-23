@@ -1,0 +1,104 @@
+.aside
+{
+	padding:10px;
+	border:1px solid #cccccc;
+	
+}
+
+.table>tbody>tr>th
+{
+	vertical-align:middle;
+}
+.table>tbody>tr>td
+{
+	vertical-align:middle;
+}
+/*-----------
+----------------*/
+.icon_link
+{
+	
+	color:blue !important;
+}
+
+.course_bg
+{
+background:#e9f8ff;
+}
+.icon dl
+{
+	margin:10px;
+}
+.courseConfirm td, .courseConfirm th {
+    border: 1px solid #000000;
+   line-height:3em;
+   vertical-align:middle;
+}
+.courseConfirm p
+{
+	 line-height:1.6em;
+	 margin:10px;
+}
+.bg-yellow
+{
+	background-color:yellow;
+}
+.bg-green
+{
+	background-color:green;
+
+}
+.dis-block
+{
+	display:block;
+}
+.confrimtbl td,.confrimtbl th
+{
+	padding:0 1%;
+}
+.confrimtbl
+{
+	width:80%;
+	margin:0 auto;
+}
+.bg_pink
+{
+	background-color:rgb(255,0,102) !important;
+}
+.reservelist li
+{
+	display:block;
+}
+.pgNav li
+{
+	padding:0% 4%;
+	
+	text-decoration:underline;
+}
+.pgNav li a
+{
+	color:blue;
+}
+.pgNav li:first-child
+{
+	padding-left:0;
+}
+.required {
+    color: #fff;
+    background: #c21010;
+    padding: 3px 5px;
+    line-height: 1;
+    margin-right: 3px;
+}
+.bartitle_m
+{
+	width:100% !important;
+}
+.bg-green
+{
+	background:#99ff99;
+}
+.borbot-white
+{
+    border-bottom: 2px solid #ffffff;
+}
