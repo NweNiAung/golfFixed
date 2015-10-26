@@ -71,6 +71,10 @@ ul li {
     border-left:1px solid #fff;
    
 }
+.visualNav li.active {
+    background: #434242;
+}
+
 .visualNav li:last-child
 {
 	border-right: none;
@@ -2433,7 +2437,7 @@ width:5%;
 .area li a:hover 
 {
 	text-decoration:none;
-	color:#000;
+	color:#9e8718!important;
 }
 
 .area li a {
@@ -2446,6 +2450,8 @@ width:5%;
 .area li a.selected
 {
 	 background: url(../common/img/header/down-arrow.jpg) no-repeat center left;
+	  background-position: 53px;
+    background-position-y: 10px;
 	 color:#9e8718 !important;
 }
 .visualNav img
@@ -2461,7 +2467,7 @@ width:5%;
 .area li:first-child+li a
 {
 	  background-position: 40px;
-    background-position-y: 11px;
+    background-position-y: 13px;
   
 }
 
@@ -2677,6 +2683,11 @@ a.underline
     padding-left: 15px;
     background: url(../img/home/golden_arrow.png) no-repeat top left;
 }
+.aside-list li a:hover
+{
+text-decoration:underline;
+
+}
 aside p{
 	    margin: 0 0 10px;
     font-size: 15px;
@@ -2688,4 +2699,11 @@ aside p{
 	padding-left: 15px;
 	margin-top:10px;
    
+}
+.caption a:hover
+{
+	text-decoration:underline;
+}
+ul.headerIn li {
+    float: left;
 }

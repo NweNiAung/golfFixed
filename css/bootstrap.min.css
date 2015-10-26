@@ -2796,7 +2796,8 @@ label {
 	display: inline-block;
 	max-width: 100%;
 	margin-bottom: 5px;
-	font-weight: 700
+	font-weight: 700;
+	cursor:pointer;
 }
 
 input[type=search] {
@@ -4616,16 +4617,17 @@ border-bottom-right-radius
 }
 
 .nav-tabs>li>a:hover {
-opacity: 1;
+opacity:0.8!important;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover
 	{
 	color: #000;
 	cursor: default;
-	background-color: #fff;
-	opacity: 1 !important;
+	background:#fff;
+	
 }
+
 
 .nav-tabs.nav-justified {
 	width: 100%;

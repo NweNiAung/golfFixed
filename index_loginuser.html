@@ -81,7 +81,7 @@
 		<div class="gnav bg-black">
 			<div class="headerIn">
 				<ul class="visualNav clearfix pc">
-					<li id="visualNav_on"><a href="#">トップ</a></li>
+					<li class="active"><a href="#">トップ</a></li>
 					<li><a href="#">ゴルフ場検索</a></li>
 					<li><a href="#">キャンペーン</a></li>
 					<li><a href="#">お気に入り</a></li>
@@ -103,7 +103,7 @@
 
 
 		<div class="merit bg-purple">
-			<ul class="headerIn">
+			<ul class="headerIn clearfix">
 				<li><img src="img/home/merit.png" alt="" /></li>
 				<li><img src="img/home/merit1.png" alt="" /></li>
 				<li><img src="img/home/merit2.png" alt="" /></li>
@@ -191,7 +191,7 @@
 											</div>
 											<div class="day">
 												<input type="radio" name="optradio" id="sunday" /> <label
-													class="radio-inline radio-date" for="sunday"><span>土日税のみ</span></label>
+													class="radio-inline radio-date" for="sunday"><span>土日祝のみ</span></label>
 											</div>
 											<div class="day">
 												<input type="radio" name="optradio" id="weekday" /> <label
@@ -205,7 +205,7 @@
 											<p class="barTitle_black mt0">エリアから</p>
 											<button type="button" class="btn btn-default bg_gradient "
 												data-toggle="modal" data-target=".mymodal">
-												追加。変更<i class="glyphicon glyphicon-play"></i>
+												追加・変更<i class="glyphicon glyphicon-play"></i>
 											</button>
 											<span>地域や都道府県を選択できます</span>
 											<!-- Modal -->
@@ -532,7 +532,7 @@
 											<p class="barTitle_black mt0">高速道路</p>
 											<button type="button" class="btn btn-default fll mr10 bg_gradient"
 												data-toggle="modal" data-target=".mymodal2">
-												追加。変更<i class="glyphicon glyphicon-play"></i>
+												追加・変更<i class="glyphicon glyphicon-play"></i>
 											</button>
 											<p class="fll mb0">
 												高速道路:<span class="text-gold">未設定</span><br> IC:<span
@@ -1153,7 +1153,7 @@
 
 
 											<div class="crs-box clearfix border-none mb10">
-												<a href="" class="btn-more btn-shadow">> 特別プランをもっと見る</a>
+												<a href="" class="btn-more btn-shadow">>  直前割プランをもっと見る</a>
 
 											</div>
 											<!-- photo area-->
@@ -1335,7 +1335,7 @@
 
 
 											<div class="crs-box clearfix border-none mb10">
-												<a href="" class="btn-more btn-shadow">&gt; 特別プランをもっと見る</a>
+												<a href="" class="btn-more btn-shadow">> 早割プランをもっと見る</a>
 
 											</div>
 											<!-- photo area-->
@@ -1682,7 +1682,42 @@
 				<!-- main content -->
 <aside class="pc col-sm-3 pr0 pl20">
 					<div class="mb20">
+					<a href="">
 						<img src="img/home/aside_img01.png" alt="">
+						</a>
+					</div>
+
+
+					<div class="aside-section mb15">
+						<div class="row">
+							<div class="col-sm-12 pt20 pb20 pr20 pl20">
+								<div class="aside-title">
+									<p class="fwbold">ログイン・会員登録
+									</p><p>
+									</p><div></div>
+								</div>
+								<p>会員登録すると、よりおトクに便利にゴルフ予約.JPを利用できます</p>
+								<p class="text-flowerpink mt10 fs16 fwbold">会員登録がお済みの方</p>
+								<div class="row mb10">
+									<input type="text" class="form-control input-lg" placeholder="メールアドレス">
+								</div>
+								<div class="row mb10">
+									<input type="password" class="form-control input-lg" placeholder="パスワード">
+								</div>
+								<div class="center">
+									<a href="#" class="btn btn-aside mb10"> ログイン</a>
+								</div>
+								<p class="text-flowerpink mt10 fs16 fwbold">会員登録がまだの方</p>
+								<div>
+									<img src="img/home/aside_tpoint.jpg" alt="tpoint">
+								</div>
+								<div>
+									<a href=""><img src="img/home/aside_register_btn.jpg" alt="新規会員登録"></a>
+								</div>
+
+							</div>
+						</div>
+
 					</div>
 					<div class="aside-section mb20">
 						<div class="row">
@@ -1693,11 +1728,11 @@
 								</p></div>
 								<div class="col-sm-12 bg-white">
 									<ul class="aside-list">
-										<li>関東近郊プロのコースレッスン体験キャンペーン中</li>
-										<li>毎月当たる！最新ゴルフクラブセット</li>
-										<li>ABCカントリークラブ GOLFオープンコンペ</li>
-										<li>夏物ゴルフウェア 最終セール開催中</li>
-										<li>ゴルフクラブ買い取りフェア ９月末まで！</li>
+										<li><a href="#">関東近郊プロのコースレッスン体験キャンペーン中</a></li>
+										<li><a href="#">毎月当たる！最新ゴルフクラブセット</a></li>
+										<li><a href="#">ABCカントリークラブ GOLFオープンコンペ</a></li>
+										<li><a href="#">夏物ゴルフウェア 最終セール開催中</a></li>
+										<li><a href="#">ゴルフクラブ買い取りフェア ９月末まで！</a></li>
 									</ul>
 								</div>
 							</div>
@@ -1715,19 +1750,24 @@
 								</p></div>
 								<div class="col-sm-12 bg-white pt20">
 									<div class="center">
+									<a href="#">
 										<img src="img/home/aside_img02.png" alt="">
+										</a>
 									</div>
-									<p class="caption">夏ゴルフを満喫しよう！シーサイドコース特集</p>
+									<p class="caption"><a href="">夏ゴルフを満喫しよう！シーサイドコース特集</a></p>
 									<div class="center">
+									<a href="">
 										<img src="img/home/aside_img03.png" alt="">
-
+</a>
 									</div>
-									<p class="caption">女性ゴルファー デビューおすすめコース特集</p>
+									<p class="caption"><a href="">女性ゴルファー デビューおすすめコース特集</a></p>
 									<div class="center">
+									<a href="">
 										<img src="img/home/aside_img04.png" alt="">
+										</a>
 
 									</div>
-									<p class="caption">北海道のゴルコース場特集</p>
+									<p class="caption"><a href="">北海道のゴルコース場特集</a></p>
 									<div class="center">
 										<a href="#" class="btn btn-aside02 mb20"> もっと見る</a>
 									</div>
