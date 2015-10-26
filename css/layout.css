@@ -201,4 +201,34 @@ footer
 {
 	margin:80px 0 0 0;
 }
+.inner
+{
+	width:895px;
+	margin:0 auto;
+}
+.btn-m
+{
+	color: #fff;
+    padding: 4px 30px !important;
+    font-size: 18px !important;
+    line-height: 1.3333333 !important;
+    border-radius: 6px !important;
+    -webkit-box-shadow: 1px 3px 10px 4px #c0bfb6!important;
+    box-shadow: 1px 3px 10px 4px #c0bfb6!important;
+}
 
+.btn-l
+{
+   color: #fff !important;
+   width:245px;
+    font-size: 18px !important;
+    line-height: 1.3333333 !important;
+    border-radius: 6px !important;
+    -webkit-box-shadow: 1px 3px 10px 4px #c0bfb6!important;
+    box-shadow: 1px 3px 10px 4px #c0bfb6!important;
+}
+.btn-grey
+{
+	color:#000!important;
+	background:#eeece1;
+}
