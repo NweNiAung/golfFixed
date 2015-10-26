@@ -4618,9 +4618,10 @@ border-bottom-right-radius
 
 .nav-tabs>li>a:hover {
 opacity:0.8!important;
+text-decoration:none;
 }
 
-.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover
+.nav-tabs>li.active>a
 	{
 	color: #000;
 	cursor: default;
@@ -5275,13 +5276,13 @@ opacity:0.8!important;
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus,
 	.navbar-inverse .navbar-nav>.active>a:hover {
 	color: #fff;
-	background-color: #080808
+
 }
 
 .navbar-inverse .navbar-nav>.disabled>a, .navbar-inverse .navbar-nav>.disabled>a:focus,
 	.navbar-inverse .navbar-nav>.disabled>a:hover {
 	color: #444;
-	background-color: transparent
+	background-color: transparent;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -5290,7 +5291,7 @@ opacity:0.8!important;
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover
 	{
-	background-color: #333
+	
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -5326,13 +5327,13 @@ opacity:0.8!important;
 		.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:focus,
 		.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:hover {
 		color: #fff;
-		background-color: #080808
+		
 	}
 	.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a,
 		.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:focus,
 		.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:hover {
 		color: #444;
-		background-color: transparent
+		
 	}
 }
 
