@@ -1,0 +1,32 @@
+.gnav-2 li a {
+    float: left;
+
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    padding:10px 21px;
+}
+.gnav-2 li a:hover
+{
+	text-decoration:none;
+}
+.gnav-2 li {
+    float: left;
+    border-left: 1px solid #fff;
+}.gnav-2 li:last-child {
+    border-right:  1px solid #fff;
+    
+   
+}
+.gnav-2 li.active {
+    background: #434242;
+}
+.bg-admin {
+    background: #eeece1;
+    border-top: 2px solid #000000;
+    padding:20px;
+}
+.table-align td
+{
+	vertical-align: middle!important;
+}
