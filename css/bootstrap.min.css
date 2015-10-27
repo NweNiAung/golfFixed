@@ -294,8 +294,9 @@ td, th {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1;
+	left: 4px;
 	color:#9e8718;
-	    font-size: 13px;
+	font-size: 13px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale
 }
@@ -2879,12 +2880,27 @@ output {
 	opacity: 1
 }
 
+.monthpicker::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+	font-size:17px;
+}
 .form-control:-ms-input-placeholder {
-	color: #999
+	color: #999;
+}
+
+.monthpicker:-ms-input-placeholder {
+	color: #000;
+	font-size:17px;
 }
 
 .form-control::-webkit-input-placeholder {
 	color: #999
+}
+
+.monthpicker::-webkit-input-placeholder {
+	color: #000;
+	font-size:17px;
 }
 
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control
@@ -2957,11 +2973,11 @@ input[type=search] {
 .checkbox-inline, .radio-inline {
 	position: relative;
 	display: inline-block;
-	padding-left: 20px;
+	padding-left: 17px;
 	margin-bottom: 0;
 	font-weight: 400;
 	vertical-align: middle;
-	cursor: pointer
+	cursor: pointer;
 }
 
 .checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
@@ -3009,7 +3025,9 @@ select.input-sm {
 	height: 30px;
 	line-height: 30px
 }
-
+select::-ms-expand{
+  display:none;
+}
 select[multiple].input-sm, textarea.input-sm {
 	height: auto
 }
@@ -4605,19 +4623,22 @@ border-bottom-right-radius
 
 .nav-tabs>li {
 	float: left;
-    margin-bottom: -1px;
-    font-size: 20px;
-    background: #000;
-    width: 443px;
-    text-align: center;
-    
+	margin-bottom: -1px;
+	font-size: 20px;
+	background: #000;
+	width: 443px;
+	text-align: center;
 }
 
 .nav-tabs>li>a {
 	
-	line-height: 1.42857143;
-	padding: 10px 0;
-	color:#fff;
+line-height: 1.42857143;
+	
+padding: 10px 0;
+	
+color:#fff;
+	
+line-height: 1.3em;
 }
 
 .nav-tabs>li>a:hover {
