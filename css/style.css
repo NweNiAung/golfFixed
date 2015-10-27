@@ -242,7 +242,7 @@ home page
 .bodyIn
 {
 	
-	background:url(../img/home/bg.jpg)no-repeat top center;
+ background: url(../common/img/bg.jpg) repeat-x;
 }
 .tab-content
 {
@@ -281,7 +281,7 @@ background:url(../img/home/gradient_bg.png) !important;
 }
 input#search_c_name_submit2 {
     background: url(../img/home/search_btn_small.png) top center;
-    width: 172px;
+    width: 169px;
     height: 55px;
     -webkit-appearance: none;
     outline: 0;
@@ -1525,8 +1525,17 @@ li>a>div {
 	float: left;
 }
 
-.nav>li>a:active, .nav>li>a:hover, .nav>li>a:focus {
-	opacity: 0.8;!important;
+.nav>li>a:active, .nav>li>a:hover {
+	opacity: 0.8 !important;
+}
+.nav-tabs>li:hover
+{
+	opacity: 0.8 !important;
+}
+
+.nav-tabs>li.active>a:hover,.nav-tabs>li.active:hover{
+	
+	opacity: 1 !important;
 }
 
 .steps>.active{
@@ -1687,7 +1696,8 @@ li>a>div {
        margin-bottom: 0;
        width: 104px;
        padding-left: 10px;
-       height: 40px;
+       padding-top: 6px;
+       padding-bottom: 6px;
        text-align: left;
        white-space: nowrap;
        vertical-align: middle;
@@ -2593,7 +2603,7 @@ a.underline
     font-size: 18px;
     border-left: solid 5px #000000;
     padding-left: 10px;
-    max-height: 22px;
+   
 }
 .footer-list li
 {
@@ -2647,7 +2657,7 @@ a.underline
     font-size: 18px;
     border-left: solid 5px #000000;
     padding-left: 10px;
-    max-height: 22px;
+   
 }
 
 .btn-aside {

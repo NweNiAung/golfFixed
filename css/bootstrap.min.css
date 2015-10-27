@@ -137,7 +137,11 @@ button {
 }
 
 button, select {
-	text-transform: none
+	text-transform: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
 }
 
 button, html input[type=button], input[type=reset], input[type=submit] {
@@ -3308,7 +3312,7 @@ select[multiple].input-lg, textarea.input-lg {
 
 .btn {
 	display: inline-block;
-	padding: 8px 23px;
+	padding: 8px 14px;
 	margin-bottom: 0;
 	font-size: 14px;
 	font-weight: 400;
@@ -7654,4 +7658,14 @@ button.close {
     padding: 6px 10px;
     width: 420px;
     line-height: 1.1;
+}
+.fw-modal
+{
+	font-weight:bold !important;
+	font-size:17px;
+	line-height: 1.3em;
+}
+.nav_bggrey
+{
+ background: #f0f0f0 !important;
 }
