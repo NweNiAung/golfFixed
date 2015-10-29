@@ -1,0 +1,825 @@
+
+<!doctype html>
+<html lang="jp">
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<title>ゴルフ予約ＪＰ</title>
+
+<link rel="stylesheet" href="css/import.css" media="all">
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<link rel="stylesheet" href="js/jqueryui.min.css">
+
+<!-- slider -->
+<link rel="stylesheet" href="js/jquery-ui-slider-pips.min.css">
+<!-- <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+<!--[if lt IE 8]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!--[if lt IE 9]><script src="js/ie8.js"></script><![endif]-->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript" src="js/jssor.js"></script>
+<script type="text/javascript" src="js/jssor.slider.js"></script>
+<script>
+	jQuery(document).ready(function($) {
+		var options = {
+			$AutoPlay : false, //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+			$AutoPlaySteps : 4, //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+			$AutoPlayInterval : 4000, //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+			$PauseOnHover : 0, //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+			$ArrowKeyNavigation : true, //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+			$SlideDuration : 160, //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+			$MinDragOffsetToSlide : 20, //[Optional] Minimum drag offset to trigger slide , default value is 20
+			$SlideWidth : 120, //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+			//$SlideHeight: 150,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+			$SlideSpacing : 10, //[Optional] Space between each slide in pixels, default value is 0
+			$DisplayPieces : 32, //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+			$ParkingPosition : 0, //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+			$UISearchMode : 1, //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+			$PlayOrientation : 1, //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+			$DragOrientation : 1, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+			$BulletNavigatorOptions : { //[Optional] Options to specify and enable navigator or not
+				$Class : $JssorBulletNavigator$, //[Required] Class to create navigator instance
+				$ChanceToShow : 0, //[Required] 0 Never, 1 Mouse Over, 2 Always
+				$AutoCenter : 0, //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+				$Steps : 1, //[Optional] Steps to go for each navigation request, default value is 1
+				$Lanes : 1, //[Optional] Specify lanes to arrange items, default value is 1
+				$SpacingX : 0, //[Optional] Horizontal space between each item in pixel, default value is 0
+				$SpacingY : 0, //[Optional] Vertical space between each item in pixel, default value is 0
+				$Orientation : 1
+			//[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+			},
+
+			$ArrowNavigatorOptions : {
+				$Class : $JssorArrowNavigator$, //[Requried] Class to create arrow navigator instance
+				$ChanceToShow : 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
+				$AutoCenter : 2, //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+				$Steps : 1
+			//[Optional] Steps to go for each navigation request, default value is 1
+			}
+		};
+
+		var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+		//responsive code begin
+		//you can remove responsive code if you don't want the slider scales while window resizes
+		function ScaleSlider() {
+			var bodyWidth = document.body.clientWidth;
+			if (bodyWidth)
+				jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 980));
+			else
+				window.setTimeout(ScaleSlider, 30);
+		}
+		ScaleSlider();
+
+		$(window).bind("load", ScaleSlider);
+		$(window).bind("resize", ScaleSlider);
+		$(window).bind("orientationchange", ScaleSlider);
+		//responsive code end
+	});
+</script>
+</head>
+
+
+</head>
+<body>
+	<div id="headerWrap">
+		<div id="header">
+			<div class="headerIn2">
+				<h1 class="site_desc mb5">
+					『<span class="text-gold">どこよりも早い</span>空き枠』『<span class="text-gold">どこよりも安い</span>空き枠』が検索できるゴルフ場予約サイト
+				</h1>
+			</div>
+			<div class="headerIn clearfix">
+
+				<a href=""><img src="common/img/header/logo.png" alt="img"
+					class="fll"></a> <img src="common/img/header/logo_bestrate.png"
+					alt="best-rated" />
+				<div class="headerUtility">
+					<ul class="clearfix">
+						<li>ようこそ ゲスト さん&nbsp;｜</li>
+						<li><a href="#">ログイン&nbsp;｜</a></li>
+						<li><a href="#" class="text-flowerpink">新規会員登録</a></li>
+
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="gnav nav_bggrey">
+
+			<div class="headerIn clearfix">
+
+				<ul class="clearfix nav area" id="nav_place">
+					<li><a href="special/hokaido/hokkaido.html">北海道・東北</a></li>
+					<li><a href="special/kanto/chiba.html" class="selected">関東・甲信越</a></li>
+					<li><a href="special/chuubu/gifu.html">中部</a></li>
+					<li><a href="special/kinki/kyoto.html">近畿</a></li>
+					<li><a href="special/chugoku/kanagawa.html">中国・四国</a></li>
+					<li><a href="special/kyushuu/okinawa.html">九州・沖縄</a></li>
+				</ul>
+				<div class="spmenusec">
+					<p class="menu">
+						<img src="common/img/header/menu.png" alt="img">
+					</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="gnav bg-black">
+			<div class="headerIn">
+				<ul class="visualNav clearfix pc">
+					<li><a href="#">トップ</a></li>
+					<li class="active"><a href="#">ゴルフ場検索</a></li>
+					<li><a href="#">キャンペーン</a></li>
+					<li><a href="#">お気に入り</a></li>
+					<li>
+						<ul class="icon_block">
+							<li><a href="#">お知らせ </a></li>
+							<li><a href="#">企業情報 </a></li>
+							<li class="mt10"><a href="#"><img
+									src="common/img/header/point.png" alt="" /> </a></li>
+							<li class="mt10"><a href="#" title="初めての方へ"><img
+									src="common/img/header/arrow.png" alt="" /> </a></li>
+							<li class="mt10"><a href="#"><img
+									src="common/img/header/question_mark.png" alt="" /> </a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="spcontact">
+			<ul class="spmenu">
+				<li><a href="login.html">ログイン</a></li>
+				<li><a href="change.html">会員情報</a></li>
+				<li><a href="#">お知らせ</a></li>
+				<li><a href="#">ヘルプ</a></li>
+			</ul>
+			<ul class="ulsec clearfix">
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav01.gif" alt=""></a></li>
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav02.gif" alt=""></a></li>
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav03.gif" alt=""></a></li>
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav04.gif" alt=""></a></li>
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav05.gif" alt=""></a></li>
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav06.gif" alt=""></a></li>
+			</ul>
+		</div>
+
+
+	</div>
+	<article>
+		<div class="">
+			<div class="bodyIn">
+				<div class="container clearfix">
+					<p class="pt10">
+						<span><a href="index.html" class="text-gold">トップページ</a>&nbsp;&gt;ゴルフ場検索結果</span>
+					</p>
+					<div class="bg-purple mb20">
+						<div class="ttl-1">ゴルフ場検索結果</div>
+					</div>
+					<div class="row bg_topgray mb20 pad20 clearfix">
+						<div class="row borderbot pb15 mb15">
+							<div class="col-sm-3 pl0">
+								<p>
+									<span class="ttl-2"> 検索案件 </span> <span> <a href=""
+										class="text-gold pl10"> X検索案件全解除 </a>
+									</span>
+								</p>
+								<p class="fall_under fw-bold">
+									該当コース: <span class="ratingprice text-red">113</span>件
+								</p>
+								<a href="#" class="btn btn-m bg-black">検索案件を変更・追加する</a>
+
+							</div>
+							<div class="col-sm-9 pr0">
+								<div class="col-sm-12 bg-white">
+									<p class="pt10">
+										<span>10/19-10/30</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜<span>すべての曜日</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜<span>関東・甲信越</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜<span>関越自動車道</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜<span>所沢ＩＣ～</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜<span>～鶴ケ島ＩＣ</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜<span>5000円から/30</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜<span>10000円まで</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜<span>昼食付き</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜<span>9:00台</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜<span>10:00台</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>&nbsp;｜ <span>連続指定枠2組以上</span> <span> <a href=""
+											class="text-gold pl10"> X解除 </a>
+										</span>
+
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row clearfix mb10">
+							<p class="ttl-2 fll">プレー日</p>
+							<div class="flr pr">
+								<div class="day">
+									<input type="radio" name="optradio" id="allday"> <label
+										class="radio-inline radio-date" for="allday"><span>すべての曜日</span></label>
+								</div>
+								<div class="day">
+									<input type="radio" name="optradio" id="sunday"> <label
+										class="radio-inline radio-date" for="sunday"><span>土日祝のみ</span></label>
+								</div>
+								<div class="day">
+									<input type="radio" name="optradio" id="weekday"> <label
+										class="radio-inline radio-date" for="weekday"><span>平日のみ</span></label>
+								</div>
+							</div>
+							0
+						</div>
+						<div class="row mb20">
+							<div id="slider1_container" class="bg-white"
+								style="position: relative; top: 0px; left: 0px; width: 100%; height: 139px; overflow: hidden;">
+
+								<!-- Slides Container -->
+								<div u="slides"
+									style="cursor: move; position: absolute; left: 0px; top: 0px; width: 100%; height: 100px; overflow: hidden;">
+									<div class="cal bg-grey">
+										<span class="cal_month_ttl01">5</span> <span
+											class="cal_month_ttl02">月</span>
+										<div class="cal_dateWrap">
+											<span class="cal_date_ttl01">23</span> <span
+												class="cal_day_ttl01">(土)</span> <span
+												class="cal_about_ttl01">39件</span>
+										</div>
+									</div>
+									<div class="cal">
+										<span class="cal_month_ttl01">5</span> <span
+											class="cal_month_ttl02">月</span>
+										<div class="cal_dateWrap">
+											<span class="cal_date_ttl01">23</span> <span
+												class="cal_day_ttl01">(土)</span> <span
+												class="cal_about_ttl01">39件</span>
+										</div>
+									</div>
+									<div class="cal">
+										<span class="cal_month_ttl01">5</span> <span
+											class="cal_month_ttl02">月</span>
+										<div class="cal_dateWrap">
+											<span class="cal_date_ttl01">23</span> <span
+												class="cal_day_ttl01">(土)</span> <span
+												class="cal_about_ttl01">39件</span>
+										</div>
+									</div>
+									<div class="cal">
+										<span class="cal_month_ttl01">5</span> <span
+											class="cal_month_ttl02">月</span>
+										<div class="cal_dateWrap">
+											<span class="cal_date_ttl01">23</span> <span
+												class="cal_day_ttl01">(土)</span> <span
+												class="cal_about_ttl01">39件</span>
+										</div>
+									</div>
+									<div class="cal">
+										<span class="cal_month_ttl01">5</span> <span
+											class="cal_month_ttl02">月</span>
+										<div class="cal_dateWrap">
+											<span class="cal_date_ttl01">23</span> <span
+												class="cal_day_ttl01">(土)</span> <span
+												class="cal_about_ttl01">39件</span>
+										</div>
+									</div>
+									<div class="cal">
+										<span class="cal_month_ttl01">5</span> <span
+											class="cal_month_ttl02">月</span>
+										<div class="cal_dateWrap">
+											<span class="cal_date_ttl01">23</span> <span
+												class="cal_day_ttl01">(土)</span> <span
+												class="cal_about_ttl01">39件</span>
+										</div>
+									</div>
+									<div class="cal">
+										<span class="cal_month_ttl01">5</span> <span
+											class="cal_month_ttl02">月</span>
+										<div class="cal_dateWrap">
+											<span class="cal_date_ttl01">23</span> <span
+												class="cal_day_ttl01">(土)</span> <span
+												class="cal_about_ttl01">39件</span>
+										</div>
+									</div>
+									<div class="cal">
+										<span class="cal_month_ttl01">5</span> <span
+											class="cal_month_ttl02">月</span>
+										<div class="cal_dateWrap">
+											<span class="cal_date_ttl01">23</span> <span
+												class="cal_day_ttl01">(土)</span> <span
+												class="cal_about_ttl01">39件</span>
+										</div>
+									</div>
+									<div class="cal">
+										<span class="cal_month_ttl01">5</span> <span
+											class="cal_month_ttl02">月</span>
+										<div class="cal_dateWrap">
+											<span class="cal_date_ttl01">25</span> <span
+												class="cal_day_ttl01">(土)</span> <span
+												class="cal_about_ttl01">39件</span>
+										</div>
+									</div>
+
+
+								</div>
+
+								<!-- Bullet Navigator Skin Begin -->
+								<!-- bullet navigator container -->
+								<div u="navigator" class="jssorb03"
+									style="position: absolute; bottom: 4px; right: 6px;">
+									<!-- bullet navigator item prototype -->
+									<div u="prototype"
+										style="position: absolute; width: 21px; height: 21px; text-align: center; line-height: 21px; color: white; font-size: 12px;">
+										<div u="numbertemplate"></div>
+									</div>
+								</div>
+								<!-- Bullet Navigator Skin End -->
+
+								<!-- Arrow Navigator Skin Begin -->
+
+								<!-- Arrow Left -->
+								<span u="arrowleft" class="jssora03l"
+									style="width: 55px; height: 55px; top: 25px !important; left: 8px;">
+								</span>
+								<!-- Arrow Right -->
+								<span u="arrowright" class="jssora03r"
+									style="width: 55px; height: 55px; top: 25px !important; right: 8px">
+								</span>
+								<!-- Arrow Navigator Skin End -->
+
+							</div>
+
+						</div>
+
+					</div>
+					<div class="bor-botblk clearfix mb0">
+						<ul class="show-result flr mb0">
+							<li class="">並び替え :</li>
+							<li class="active"><a href="">人気順</a></li>
+							<li class="choice"><a href="">評価が高い順 </a></li>
+							<li class="choice"><a href="">評価が安い順 </a></li>
+							<li class="choice"><a href="">ICに近い順</a></li>
+						</ul>
+					</div>
+					<div class="row bg-search pad20">
+					<div class="row">
+					<div class="col-sm-6 pl0 pr0">
+					
+					<img src="img/2.jpg" alt="" class="img-responsive fll"/>
+					
+					<div class="col-sm-9 pr0">
+					<p class="text-gold fs26 fwbold">
+					<a href="" class="text-gold fs26 fwbold">
+					大富士ゴルフ場
+					</a>
+					</p>
+					<span class="near-by pr10">静岡件</span><span class="text-white pr10 pl10">京葉道路/ＩＣより5km</span> <span>
+					<i class="glyphicon glyphicon-gps"></i><a href="#" class="text-gold">アクセスマップ</a>
+					</span>
+					</div>
+					</div>
+					
+					<div class="col-sm-6 pr0">
+					<div class="bg-black flr bor-radius">
+						<ul class="plan-review">
+							<li>難易度: 簡単</li>
+							<li>練習場: 有り</li>
+							<li>評&nbsp;価:  <img src="http://2.kc.blz.io/S/-/CBBGTslN4.webp" width="59" height="11" alt=""></li>
+						</ul>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+					<table summary="プランカレンダー" class="search-tb table bg-white">
+							<thead class="bg-grey">
+								<tr>
+									<th rowspan="2" class="center">プラン名</th>
+									<th rowspan="2" class="plan_calender_icon">プラン内容</th>
+									<th class="month" colspan="9">ティータイム時間帯別料金</th>
+
+								</tr>
+								<tr class="date">
+									<td>早朝</td>
+									<td>7時ー</td>
+									<td>8時ー</td>
+									<td>9時ー</td>
+									<td>10時ー</td>
+									<td>11時ー</td>
+									<td>12時ー</td>
+									<td class="last">午後</td>
+								</tr>
+
+
+							</thead>
+							<tbody>
+								<tr id="" class="">
+									<th rowspan="1"><p class="planName">
+											<a href="#" class="js_ref" rel="nofollow">らくらく午後スルー・昼食付プラン（セルフ）</a>
+										</p></th>
+									<td class="plan_calender_icon" rowspan="1"><p class="icnList">
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+										</p></td>
+									<td class="days gray"><span>2</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+
+
+
+								</tr>
+								<tr id="" class=" js_plan  odd ">
+									<th rowspan="1"><p class="planName">
+											<a href="#" class="js_ref" rel="nofollow">らくらく午後スルー・昼食付プラン（セルフ）</a>
+										</p></th>
+									<td class="plan_calender_icon" rowspan="1"><p class="icnList">
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+										</p></td>
+									<td class="days gray"><span>2</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+
+
+
+								</tr>
+								<tr id="" class=" js_plan  odd ">
+									<th rowspan="1"><p class="planName">
+											<a href="#" class="js_ref" rel="nofollow">らくらく午後スルー・昼食付プラン（セルフ）</a>
+										</p></th>
+									<td class="plan_calender_icon" rowspan="1"><p class="icnList">
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+										</p></td>
+									<td class="days gray"><span>2</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+
+
+
+								</tr>
+								<tr id="" class=" js_plan  odd ">
+									<th rowspan="1"><p class="planName">
+											<a href="#" class="js_ref" rel="nofollow">らくらく午後スルー・昼食付プラン（セルフ）</a>
+										</p></th>
+									<td class="plan_calender_icon" rowspan="1"><p class="icnList">
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+											<span><em class="near_by" style="margin-right: 3px;">画像</em></span>
+										</p></td>
+									<td class="days gray"><span>2</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+									<td class="days gray"><span>3</span>
+									<ul>
+											<li class="gdo_only">\7,000</li>
+										</ul></td>
+
+
+
+								</tr>
+
+
+							</tbody>
+
+						</table>
+					</div>
+					
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!--sp block-->
+
+
+
+
+	</article>
+
+	<footer>
+
+
+		<div class="nav_bggrey">
+			<div class="container">
+
+				<div class="row pt30 pb30 dis-none nav_bggrey">
+					<div class="col-sm-12 clearfix pr0 pl0">
+						<dl class="res_seofooter_top">
+							<dt class="aside-title">ゴルフ場一覧</dt>
+							<dd>
+								<ul class="prefectures">
+									<li class="first"><a href="#">北海道・東北</a></li>
+									<li class="prefecturestop"><a href="#">北海道</a></li>
+									<li><a href="#">青森</a></li>
+									<li><a href="#">岩手</a></li>
+									<li><a href="#">宮城</a></li>
+									<li><a href="#">秋田</a></li>
+									<li><a href="#">山形</a></li>
+									<li><a href="#">福島</a></li>
+								</ul>
+								<ul class="prefectures">
+									<li class="first"><a href="#">関東・甲信越</a></li>
+									<li class="prefecturestop"><a href="#">茨城</a></li>
+									<li><a href="#">栃木</a></li>
+									<li><a href="#">群馬</a></li>
+									<li><a href="#">埼玉</a></li>
+									<li><a href="#">千葉</a></li>
+									<li><a href="#">東京</a></li>
+									<li><a href="#">神奈川</a></li>
+									<li><a href="#">山梨</a></li>
+									<li><a href="#">長野</a></li>
+									<li><a href="#">静岡</a></li>
+									<li class="mt20"><a href="#">新潟</a></li>
+								</ul>
+
+								<ul class="prefectures">
+									<li class="first"><a href="#">中部</a></li>
+									<li class="prefecturestop"><a href="#">愛知</a></li>
+									<li><a href="#">岐阜</a></li>
+									<li><a href="#">三重</a></li>
+									<li><a href="#">富山</a></li>
+									<li><a href="#">石川</a></li>
+									<li><a href="#">福井</a></li>
+								</ul>
+
+								<ul class="prefectures">
+									<li class="first"><a href="#">近畿</a></li>
+									<li class="prefecturestop"><a href="#">滋賀</a></li>
+									<li><a href="#">京都</a></li>
+									<li><a href="#">大阪</a></li>
+									<li><a href="#">兵庫</a></li>
+									<li><a href="#">奈良</a></li>
+									<li><a href="#">和歌山</a></li>
+								</ul>
+
+								<ul class="prefectures">
+									<li class="first"><a href="#">中国・四国</a></li>
+									<li class="prefecturestop"><a href="#">鳥取</a></li>
+									<li><a href="#">島根</a></li>
+									<li><a href="#">岡山</a></li>
+									<li><a href="#">広島</a></li>
+									<li><a href="#">山口</a></li>
+									<li><a href="#">徳島</a></li>
+									<li><a href="#">香川</a></li>
+									<li><a href="#">愛媛</a></li>
+									<li><a href="#">高知</a></li>
+								</ul>
+
+								<ul class="prefectures">
+									<li class="first"><a href="#">九州・沖縄</a></li>
+									<li class="prefecturestop"><a href="#">福岡</a></li>
+									<li><a href="#">佐賀</a></li>
+									<li><a href="#">長崎</a></li>
+									<li><a href="#">熊本</a></li>
+									<li><a href="#">大分</a></li>
+									<li><a href="#">宮崎</a></li>
+									<li><a href="#">鹿児島</a></li>
+									<li><a href="#">沖縄</a></li>
+								</ul>
+
+								<ul class="prefectures">
+									<li class="first"><a href="#">海外</a></li>
+									<li class="prefecturestop"><a href="#">ハワイ</a></li>
+									<li><a href="#">グアム</a></li>
+									<li class="footer_span2"><a href="#">サイパン・ロタ</a></li>
+									<li><a href="#">アジア</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+
+				</div>
+			</div>
+			<div class="bg-black">
+				<div class="footer_nav pc pb20">
+
+					<div>
+						<ul class="center footer-list">
+							<li><a href="#">ゴルフ予約.JP サービス</a></li>
+							<li><a href="#">ゴルフ予約</a></li>
+							<li><a href="#">お気に入り</a></li>
+							<li><a href="#">閲覧履歴</a></li>
+							<li><a href="#">マイページ</a></li>
+						</ul>
+						<ul class="center footer-list mt20">
+							<li><a href="#">利用規約</a></li>
+							<li><a href="#">個人情報保護方針</a></li>
+							<li><a href="#">お問い合わせ</a></li>
+							<li><a href="#">ご意見・ご要望 </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bg-purple center pt30 pb30">
+				<span class="text-gold fs13">© 2015 ゴルフ予約.JP</span>
+			</div>
+		</div>
+
+
+
+	</footer>
+	<script>
+		// Only enable if the document has a long scroll bar
+		// Note the window height + offset
+		if (($(window).height() + 100) < $(document).height()) {
+			$('#top-link-block').removeClass('hidden').affix({
+				// how far to scroll down before link "slides" into view
+				offset : {
+					top : 100
+				}
+			});
+		}
+	</script>
+
+	<!-- ▼jQuery-UI -->
+
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- ▼jQuery-UI-datepicker -->
+	<script src="js/jquery.ui.datepicker-ja.min.js"></script>
+
+	<script src="js/slick.js"></script>
+	<script>
+		$(function() {
+			//  $(".monthpicker").datepicker();
+
+			$('.monthpicker,.datepicker').datepicker({
+
+				dateFormat : "MM dd"
+			});
+
+			$(".switch").click(function() {
+				$(".singleSearchBox").show();
+				$(".searchBoxContainer").hide();
+
+			});
+			$(".switch01").click(function() {
+				$(".singleSearchBox").hide();
+				$(".searchBoxContainer").show();
+
+			});
+
+		});
+
+		$('.single-Nav').slick({
+			dots : true,
+			infinite : true,
+			speed : 500,
+			slidesToShow : 1,
+			slidesToScroll : 1
+		});
+	</script>
+
+	<!-- slider -->
+	<script src="js/jquery-ui-slider-pips.js"></script>
+	<script src="js/examples.js"></script>
+
+</body>
+</html>
