@@ -246,14 +246,14 @@ home page
 .bodyIn
 {
 	
- background: url(../common/img/bg.jpg) repeat-x;
+ background: url(../common/img/bg.png) repeat-x;
 }
 .tab-content
 {
 	
 	background:url(../img/home/bg_tab.jpg)no-repeat top center;
-	
-	margin-bottom: 26px;
+    margin-bottom: 5px;
+    height: 531px;
 }
 .barTitle_black{
     font-size: 18px;
@@ -465,15 +465,17 @@ margin-bottom:30px!important;
 }
 
 ul.prefectures li {
-       margin: 0 0 4px -5px;
-    padding: 8px 20px 5px;
     float: left;
     font-size: 15px;
-    line-height: 13px;
+    line-height: 20px;
     white-space: nowrap;
     border-right:solid 1px #000000;
     text-align: center;
-    min-width: 80px;
+   width: 80px;
+}
+ul.prefectures li.footer_span2
+{
+	 width: 160px;
 }
 ul.prefectures li:first-child
 {
@@ -498,11 +500,10 @@ ul.prefectures {
 
 ul.prefectures li.first {
 	margin: 0 0 4px -5px;
-	padding: 4px 22px;
 	width: 15%;
 	float: left;
 	font-size: 15px;
-	line-height: 13px;
+	line-height: 20px;
 	font-weight: bold;
 	white-space: nowrap;
 	margin-right:10px;
@@ -513,7 +514,7 @@ ul.prefectures li.first a
 	color:#4f0228 !important;
 	background: url(../common/img/header/right-arrow.png) no-repeat center
  left;
-
+background-position: 0px 2px;
     padding:0 20px;
 }
 
