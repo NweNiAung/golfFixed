@@ -2445,7 +2445,7 @@ upload button
 }
 
 .bg-search {
-	background: #232323;
+	background: #f7f7f6!important;
 }
 
 .bor-search {
@@ -2726,6 +2726,8 @@ aside p {
 .caption {
 	background: url(../img/home/golden_arrow.png) no-repeat top left;
 	padding-left: 15px;
+	
+	
 	margin-top: 10px;
 }
 
@@ -2838,21 +2840,83 @@ ul.show-result {
 }
 .search-tb>tbody>tr
 {
-	border-bottom:solid 3px #000;
+	border-bottom:solid 2px #b5b5b5;
 }
 .search-tb td
 {
-	verticle-align:middle;
+	vertical-align:middle!important;
 }
-.search-tb>thead>tr>th
+
+td.days{
+    border-left: 1px dotted #b5b5b5;
+}
+tr.date td {
+    border-left: 1px dotted #b5b5b5;
+}
+table.search-tb thead {
+    vertical-align: middle!important;
+    text-align: center!important;
+    border-top: 1px solid #b5b5b5;
+    background: #f0f0f0!important;
+}
+th.plan-name
 {
-	border-bottom: 1px dotted #000000;
-	verticle-align:middle;	
+	vertical-align:middle!important;
+	width:24%;
+	border-right: 1px dotted #b5b5b5;
+	
 }
-.search-tb>tbody>tr>td
+.plan-name>p>a
 {
-	border-top: 1px dotted #000!important;
+	font-size:17px;
+	font-weight:bold;
+	
+	
 }
-td.days.gray {
-    border-left: 1px dotted #000;
+tr>.date>td
+{
+	border-top:1px dotted #b5b5b5;
+}
+.days>span>a
+{
+	text-align:center;
+	font-size:40px;
+	font-family: "Times New Roman";
+	color:#9e8718;
+	font-weight:bold;
+}
+.search-tb>thead>tr>th {
+    vertical-align: middle!important;
+    border-bottom: 1px solid #b5b5b5;
+}
+.days
+{
+	text-align:center;
+}
+.plan-time
+{
+	border-left:1px dotted #b5b5b5;
+}
+.date>td
+{
+	border-top:1px dotted #b5b5b5;
+}
+.days ul li
+{
+	    font-size: 15px;
+    font-weight: bold;
+    color: #b80c61;
+}
+.search-tb>thead>tr>th.plan-time
+{
+	border-bottom:1px dotted #b5b5b5!important;
+	
+}
+img.tpoint
+{
+	vertical-align:bottom;
+}
+.required-search span
+{
+	line-height:24px;
 }
