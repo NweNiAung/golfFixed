@@ -967,6 +967,42 @@ a {
 }
 
 @media screen and (max-width:980px) {
+		.visualNav li {
+    float: left;
+    border-left: 1px solid #fff;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+.visualNav li a {
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    min-width: 1px!important;
+    float: none!important;
+}
+.sp-flr
+{
+	float:right;
+}
+.sp-fll
+{
+	float:left;
+}
+.mainIn {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.nav-tabs>li {
+    width: 50%!important;
+}
+.top-pill>li>a
+{
+	padding: 10px 48px!important;
+}
 	.visualNav {
 		width: 100%;
 	}
@@ -1152,6 +1188,8 @@ a {
 }
 
 @media only screen and (min-width: 641px) and (max-width: 768px) {
+	
+
 	.site_desc {
 		disply: none;
 	}
