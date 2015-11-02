@@ -38,7 +38,7 @@
 <!-- header.php -->
 
 <?php  include 'inc/menu_login.php'; ?>
-		<div class="merit bg-purple">
+		<div class="merit bg-purple pc">
 			<ul class="headerIn clearfix">
 				<li><img src="img/home/merit.png" alt="" /></li>
 				<li><img src="img/home/merit1.png" alt="" /></li>
@@ -48,33 +48,33 @@
 		</div>
 
 	<article>
-		<div class="pc">
+		<div class="">
 			<div class="bodyIn home">
-				<div class="container pc pt20">
+				<div class="container pt20">
 					<div class="main_content">
 						<div class="mainIn">
 							<ul class="nav nav-tabs top-pill">
 								<li class="active"><a data-toggle="pill" href="#tab1">エリア・高速道路から<span
 										class="text-flowerpink">最安値</span>検索
 								</a></li>
-								<li class="tab_sp">&nbsp;</li>
+								<li class="tab_sp pc">&nbsp;</li>
 								<li><a data-toggle="pill" href="#tab2">Myゴルフ場から検索</a></li>
 
 							</ul>
 
 							<div class="tab-content">
-								<div id="tab1" class="tab-pane fade in active">
+								<div id="tab1" class="tab-pane fade-in active">
 
 									<div class="mr20 ml20">
 										<div class="row borderbot pb15 mb15">
-											<p class="barTitle_black mt5">プレー日</p>
+											<p class="barTitle_black mt5 sp-fll">プレー日</p>
 											<div class="col-sm-6 pl0 pr0">
 
-												<div class="search-box-date ">
+												<div class="search-box-date sp-flr">
 													<input type="text"
 														class="monthpicker daypicker search-input" name="month"
-														id="month" placeholder="日付選択" /> から <select name="widthday"
-														class="widthday ml10">
+														id="month" placeholder="日付選択" /> から <select
+														name="widthday" class="widthday ml10">
 														<option value="1" selected="selected">1</option>
 														<option value="2">2</option>
 														<option value="3">3</option>
@@ -93,7 +93,7 @@
 												</div>
 
 											</div>
-											<div class="col-sm-6 date pl0 pr0 pt10">
+											<div class="col-sm-6 date pl0 pr0 pt10 sp-flr">
 												<div class="day">
 													<input type="radio" name="optradio" id="allday" /> <label
 														class="radio-inline radio-date" for="allday"><span>すべての曜日</span></label>
@@ -108,16 +108,18 @@
 												</div>
 											</div>
 										</div>
-										<div class="row pb5 borderbot">
+										<div class="row pb5 borderbot ">
 
-											<div class="col-sm-6 pr0 pl0">
-												<p class="barTitle_black mt0">エリア</p>
-												<button type="button"
-													class="btn btn-default bg_gradient fw-modal"
-													data-toggle="modal" data-target=".mymodal">
-													追加・変更<i class="glyphicon glyphicon-play"></i>
-												</button>
-												<span class="select_desc">地域や都道府県を選択できます</span>
+											<div class="col-sm-6 pr0 pl0 clearfix">
+												<p class="barTitle_black mt0 sp-fll">エリア</p>
+												<div class="sp-flr">
+													<button type="button"
+														class="btn btn-default bg_gradient fw-modal"
+														data-toggle="modal" data-target=".mymodal">
+														追加・変更<i class="glyphicon glyphicon-play"></i>
+													</button>
+													<span class="select_desc sp-flr">地域や都道府県を選択できます</span>
+												</div>
 												<!-- Modal -->
 												<div class="modal fade mymodal" tabindex="-1" role="dialog"
 													aria-labelledby="myModalLabel">
@@ -439,17 +441,19 @@
 												</div>
 
 											</div>
-											<div class="col-sm-6 pr0  br_dotted">
-												<p class="barTitle_black mt0">高速道路</p>
-												<button type="button"
-													class="btn btn-default fll mr10 bg_gradient fw-modal"
-													data-toggle="modal" data-target=".mymodal2">
-													追加・変更<i class="glyphicon glyphicon-play"></i>
-												</button>
-												<p class="fll mb0">
-													高速道路:<span class="text-gold">未設定</span><br> IC:<span
-														class="text-gold">未設定</span><br>
-												</p>
+											<div class="col-sm-6 pr0  br_dotted clearfix">
+												<p class="barTitle_black mt0 sp-fll">高速道路</p>
+												<div class="sp-flr">
+													<button type="button"
+														class="btn btn-default fll mr10 bg_gradient fw-modal"
+														data-toggle="modal" data-target=".mymodal2">
+														追加・変更<i class="glyphicon glyphicon-play"></i>
+													</button>
+													<p class="fll mb0">
+														高速道路:<span class="text-gold">未設定</span><br> IC:<span
+															class="text-gold">未設定</span><br>
+													</p>
+												</div>
 												<div class="modal fade mymodal2" tabindex="-1" role="dialog"
 													aria-labelledby="myModalLabel">
 													<div class="modal-dialog" role="document">
@@ -568,88 +572,93 @@
 
 										</div>
 										<div class="row pb10 pt10 borderbot pt15">
-											<div class="col-sm-6 pr0 pl0 pt5">
-												<p class="barTitle_black mt0">料金・条件</p>
+											<div class="col-sm-6 pr0 pl0 pt5 clearfix">
+												<p class="barTitle_black mt0 fll">料金・条件</p>
 
+												<div class="sp-flr">
+													<div class="price_col">
+														<select name="price" class="price">
+															<option value="1" selected="selected">指定なし</option>
+															<option value="2">指定なし</option>
 
-												<div class="price_col">
-													<select name="price" class="price">
-														<option value="1" selected="selected">指定なし</option>
-														<option value="2">指定なし</option>
+														</select>円～
 
-													</select>円～
+													</div>
 
-												</div>
+													<div class="price_col">
+														<select name="price" class="price">
+															<option value="1" selected="selected">指定なし</option>
+															<option value="2">指定なし</option>
 
-												<div class="price_col">
-													<select name="price" class="price">
-														<option value="1" selected="selected">指定なし</option>
-														<option value="2">指定なし</option>
+														</select>円
 
-													</select>円
-
+													</div>
 												</div>
 
 
 											</div>
-											<div class="row">
+											<div class="row play-style">
 
-												<div class="col-sm-6 date br_dotted pr0 pt5">
-													<p class="barTitle_black mt0 mb15">プレースタイル</p>
-													<div class="checkboxbg ml10">
-														<input type="checkbox" id="lunch"> <label
-															for="lunch"><span>昼食付き</span></label>
-													</div>
-													<div class="checkboxbg">
-														<input type="checkbox" id="wranty"> <label
-															for="wranty"><span>2サム保証</span></label>
-													</div>
-													<div class="checkboxbg">
-														<input type="checkbox" id="caddy"> <label
-															for="caddy"><span>キャディ付き</span></label>
+												<div class="col-sm-6 date br_dotted pr0 pt5 clearfix">
+													<p class="barTitle_black mt0 mb15 sp-fll">プレースタイル</p>
+													<div class="sp-flr">
+														<div class="checkboxbg ml10">
+															<input type="checkbox" id="lunch"> <label
+																for="lunch"><span>昼食付き</span></label>
+														</div>
+														<div class="checkboxbg">
+															<input type="checkbox" id="wranty"> <label
+																for="wranty"><span>2サム保証</span></label>
+														</div>
+														<div class="checkboxbg">
+															<input type="checkbox" id="caddy"> <label
+																for="caddy"><span>キャディ付き</span></label>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="row pb5 pt10 ">
-											<div class="col-sm-6 pr0 pl0">
-												<p class="barTitle_black mt5">スタート時間</p>
-												<div class="col-sm-12 date pl0 pr0 pt5">
-													<div class="checkboxbg">
-														<input type="checkbox" id="sixTime"> <label
-															for="sixTime"><span>6時台</span></label>
+											<div class="col-sm-6 pr0 pl0 clearfix">
+												<div class="barTitle_black mt5 sp-fll">スタート時間</div>
+												<div class="sp-fll clearfix">
+													<div class="col-sm-12 date pl0 pr0 pt5 clearfix">
+														<div class="checkboxbg">
+															<input type="checkbox" id="sixTime"> <label
+																for="sixTime"><span>6時台</span></label>
+														</div>
+														<div class="checkboxbg">
+															<input type="checkbox" id="sevenTime"> <label
+																for="sevenTime"><span>7時台</span></label>
+														</div>
+														<div class="checkboxbg">
+															<input type="checkbox" id="eightTime"> <label
+																for="eightTime"><span>8時台</span></label>
+														</div>
 													</div>
-													<div class="checkboxbg">
-														<input type="checkbox" id="sevenTime"> <label
-															for="sevenTime"><span>7時台</span></label>
-													</div>
-													<div class="checkboxbg">
-														<input type="checkbox" id="eightTime"> <label
-															for="eightTime"><span>8時台</span></label>
-													</div>
-												</div>
-												<div class="col-sm-12 date pl0 pr0">
-													<div class="checkboxbg">
-														<input type="checkbox" id="nineTime"> <label
-															for="nineTime"><span>9時台</span></label>
-													</div>
+													<div class="col-sm-12 date pl0 pr0 clearfix">
+														<div class="checkboxbg">
+															<input type="checkbox" id="nineTime"> <label
+																for="nineTime"><span>9時台</span></label>
+														</div>
 
-													<div class="checkboxbg">
-														<input type="checkbox" id="tenTime"> <label
-															for="tenTime"><span>10時台</span></label>
-													</div>
-													<div class="checkboxbg">
-														<input type="checkbox" id="elevenTime"> <label
-															for="elevenTime"><span>11時台～</span></label>
+														<div class="checkboxbg">
+															<input type="checkbox" id="tenTime"> <label
+																for="tenTime"><span>10時台</span></label>
+														</div>
+														<div class="checkboxbg">
+															<input type="checkbox" id="elevenTime"> <label
+																for="elevenTime"><span>11時台～</span></label>
+														</div>
 													</div>
 												</div>
 											</div>
 
-											<div class="col-sm-6 pr0 br_dotted">
-												<p class="barTitle_black mt5">連続枠を指定</p>
+											<div class="col-sm-6 pr0 br_dotted clearfix">
+												<p class="barTitle_black mt5 sp-fll">連続枠を指定</p>
 
 
-												<div class="price_col pb20">
+												<div class="price_col pb20 sp-fll">
 													<select name="price" class="price large_select">
 														<option selected>指定なし</option>
 														<option value="2">2組以上</option>
@@ -673,14 +682,13 @@
 										</div>
 									</div>
 
-									<div class="row pb20 border-fixed">
+									<div class="row pb20 border-fixed clearfix">
 										<div class="searchhomeLeft">
 											<div class="search_wrapBtn">
 												<a href="" data-toggle="modal" data-target=".mymodal3"
 													class="text-gold underline"> <img
 													src="img/home/add_btn.png" alt=""
-													class="img-responsive fll mr5">
-													こだわり条件を追加する
+													class="img-responsive fll mr5"> こだわり条件を追加する
 												</a>
 												<div class="modal fade mymodal3" tabindex="-1" role="dialog"
 													aria-labelledby="myModalLabel">
@@ -925,7 +933,7 @@
 
 									</div>
 									<div
-										class="panel-heading bg-grey2 fw-bold txt-white clearfix mb20 pc">
+										class="panel-heading bg-grey2 fw-bold txt-white clearfix mb20">
 										<form class="form-inline flr">
 
 											<div class="form-group">
@@ -1585,6 +1593,7 @@
 						</div>
 
 					</div>
+					<!-- main content -->
 					<!-- main content -->
 <?php  include 'inc/aside_login.php'; ?>
 
