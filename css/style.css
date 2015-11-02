@@ -983,6 +983,52 @@ a {
     min-width: 1px!important;
     float: none!important;
 }
+.tab-content {
+    background: url(../img/home/bg_tab.jpg) no-repeat top center #eeece1;
+    margin-bottom: 5px;
+    height: auto!important;
+}
+.border-fixed {
+    border-top: 1px solid #000000;
+    background: #eeece1;
+    padding: 0 20px;
+}
+.searchbydate
+{
+	margin:0!important;
+	padding:0!important;
+}
+span.sp-fll.ml10 {
+    margin-bottom: 10px;
+}
+input#search_c_name_submit2 {
+    width: 80%;
+    background-size: 100%;
+    background-position: 8px;
+}
+div.reco {
+    width: 100%!important;
+    float: none!important;
+    background: #fff;
+}
+.mygolf_plan {
+    width: 100%!important;
+    height: auto!important;
+    background: url(../img/home/plan_title_green.png) no-repeat center #395610!important;
+}
+.reco .reco_box {
+    width: 100%!important;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.specialplan h3
+{
+	text-align:center!important;
+}
+.home .search-input
+{
+	margin-left:29px!important;
+}
 .col-sm-6.pr0.br_dotted.clearfix {
     padding-left: 0px!important;
     border-left: none!important;
