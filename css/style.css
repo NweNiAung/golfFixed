@@ -983,6 +983,22 @@ a {
     min-width: 1px!important;
     float: none!important;
 }
+.col-sm-6.pr0.br_dotted.clearfix {
+    padding-left: 0px!important;
+    border-left: none!important;
+    padding-top: 10px;
+    border-top: 1px dotted;
+}
+.col-sm-6.pr0.pl0.clearfix,.col-sm-6.pr0.pl0.pt5,.br-dotted.clearfix {
+    padding-bottom: 10px;
+}
+.barTitle_black.mt5.sp-fll {
+    margin-right: 20px;
+}
+.ml10
+{
+	margin-left:0px!important;
+}
 .sp-flr
 {
 	float:right;
@@ -1001,7 +1017,7 @@ a {
 }
 .top-pill>li>a
 {
-	padding: 10px 48px!important;
+	padding: 10px 54px!important;
 }
 	.visualNav {
 		width: 100%;
