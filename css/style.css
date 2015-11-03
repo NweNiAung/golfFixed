@@ -967,187 +967,169 @@ a {
 }
 
 @media screen and (max-width:980px) {
-		.visualNav li {
-    float: left;
-    border-left: 1px solid #fff;
-    width: 25%;
-    text-align: center;
-    padding: 10px;
-}
-.visualNav li a {
-    font-size: 15px;
-    text-align: center;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    min-width: 1px!important;
-    float: none!important;
-}
-.tab-content {
-    background:#eeece1;
-    margin-bottom: 5px;
-    height: auto!important;
-}
-.border-fixed {
-    border-top: 1px solid #000000;
-    background: #eeece1;
-    padding: 0 20px;
-}
-a.btn-more.btn-shadow {
-    margin: 0 auto;
-    width: 100%;
-}
-.searchbydate
-{
-	margin:0!important;
-	padding:0!important;
-}
-.searchhome
-{
-	width:auto!important;
-}
-span.sp-fll.ml10 {
-    margin-bottom: 10px;
-}
-input#search_c_name_submit2 {
-    width: 80%;
-    background-size: 100%;
-    background-position: 8px;
-}
-div.reco {
-    width: 100%!important;
-    float: none!important;
-    background: #fff;
-}
-.mygolf_plan {
-    width: 100%!important;
-    height: auto!important;
-    background: url(../img/home/plan_title_green.png) no-repeat center #395610!important;
-    margin-top:20px;
-}
-.mygolf_plan2 {
-    width: 100%!important;
-    height: auto!important;
-    background: url(../img/home/plan_title_blue.png) no-repeat center #02214f!important;
-    margin-top:20px;
-}
-.mygolf_plan3 {
-    width: 100%!important;
-    height: auto!important;
-    background: url(../img/home/plan_title_brown.png) no-repeat center #4f0228!important;
-    margin-top:20px;
-}
-.reco .reco_box {
-    width: 100%!important;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-.search-sm
-{
-	width:auto!important;
-}
-.road-search p.mb0
-{
-	margin-left:20px;
-}
-.col-sm-6.date.pl0.pr0.pt10.sp-flr {
-    max-width: 70%;
-}
-p.barTitle_black.mt0.mb15.sp-fll,.barTitle_black.mt5.sp-fll {
-    max-width: 30%;
-}
-.date .checkbox
-{
-	width:auto!important;
-}
-.row.pb20.border-fixed.clearfix {
-    margin-bottom: 20px!important;
-}
-
-.play-style,.sp-flr.area-search,.sp-fll.road-search
-{
-	max-width:67%;
-}
-.time-search,.sp-flr.road-search
-{
-	min-width:67%;
-}
-.price-search
-{
-	min-width:69%;
-}
-.ml10
-{
-	margin-left:0px!important;
-}
-.time-search .checkboxbg
-{
-	width:auto!important;
-}
-.checkboxbg.ml10 {
-    margin-left: 0px!important;
-}
-.row.borderbot.pb15.mb15{
-    padding-top: 20px!important;
-}
-
-.specialplan h3
-{
-	text-align:center!important;
-}
-.select_desc
-{
-	max-width:43%!important;
-}
-.price_col.pb20.sp-fll {
-    margin-left: 3%;
-}
-
-.reco_ttl
-{
-	width:100%!important;
-}
-.crs-box h3
-{
-	text-align:center!important;
-}
-.home .search-input
-{
-	margin-left:29px!important;
-}
-.col-sm-6.pr0.br_dotted.clearfix {
-    padding-left: 0px!important;
-    border-left: none!important;
-    padding-top: 10px;
-    border-top: 1px dotted;
-}
-.col-sm-6.pr0.pl0.clearfix,.col-sm-6.pr0.pl0.pt5,.br_dotted.clearfix {
-    padding-bottom: 10px;
-}
-.ml10
-{
-	margin-left:0px!important;
-}
-.sp-flr
-{
-	float:right;
-}
-.sp-fll
-{
-	float:left;
-}
-.mainIn {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.nav-tabs>li {
-    width: 50%!important;
-}
-.top-pill>li>a
-{
-	padding: 10px 31px!important;
-}
+	.visualNav li {
+		float: left;
+		border-left: 1px solid #fff;
+		width: 25%;
+		text-align: center;
+		padding: 10px;
+	}
+	.visualNav li a {
+		font-size: 15px;
+		text-align: center;
+		color: #fff;
+		padding: 10px 0;
+		text-align: center;
+		min-width: 1px !important;
+		float: none !important;
+	}
+	.tab-content {
+		background: #eeece1;
+		margin-bottom: 5px;
+		height: auto !important;
+	}
+	.border-fixed {
+		border-top: 1px solid #000000;
+		background: #eeece1;
+		padding: 0 20px;
+	}
+	a.btn-more.btn-shadow {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.searchbydate {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	.searchhome {
+		width: auto !important;
+	}
+	span.sp-fll.ml10 {
+		margin-bottom: 10px;
+	}
+	input#search_c_name_submit2 {
+		width: 80%;
+		background-size: 100%;
+		background-position: 8px;
+	}
+	div.reco {
+		width: 100% !important;
+		float: none !important;
+		background: #fff;
+	}
+	.mygolf_plan {
+		width: 100% !important;
+		height: auto !important;
+		background: url(../img/home/plan_title_green.png) no-repeat center
+			#395610 !important;
+		margin-top: 20px;
+	}
+	.mygolf_plan2 {
+		width: 100% !important;
+		height: auto !important;
+		background: url(../img/home/plan_title_blue.png) no-repeat center
+			#02214f !important;
+		margin-top: 20px;
+	}
+	.mygolf_plan3 {
+		width: 100% !important;
+		height: auto !important;
+		background: url(../img/home/plan_title_brown.png) no-repeat center
+			#4f0228 !important;
+		margin-top: 20px;
+	}
+	.reco .reco_box {
+		width: 100% !important;
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+	.search-sm {
+		width: auto !important;
+	}
+	.road-search p.mb0 {
+		margin-left: 20px;
+	}
+	.col-sm-6.date.pl0.pr0.pt10.sp-flr {
+		max-width: 70%;
+	}
+	p.barTitle_black.mt0.mb15.sp-fll, .barTitle_black.mt5.sp-fll {
+		max-width: 30%;
+	}
+	.date .checkbox {
+		width: auto !important;
+	}
+	.row.pb20.border-fixed.clearfix {
+		margin-bottom: 20px !important;
+	}
+	.play-style, .sp-flr.area-search, .sp-fll.road-search {
+		max-width: 67%;
+	}
+	.time-search, .sp-flr.road-search {
+		min-width: 67%;
+	}
+	.price-search {
+		min-width: 69%;
+	}
+	.ml10 {
+		margin-left: 0px !important;
+	}
+	.time-search .checkboxbg {
+		width: auto !important;
+	}
+	.checkboxbg.ml10 {
+		margin-left: 0px !important;
+	}
+	.row.borderbot.pb15.mb15 {
+		padding-top: 20px !important;
+	}
+	.specialplan h3 {
+		text-align: center !important;
+	}
+	.select_desc {
+		max-width: 43% !important;
+	}
+	.price_col.pb20.sp-fll {
+		margin-left: 3%;
+	}
+	.reco_ttl {
+		width: 100% !important;
+	}
+	.crs-box h3 {
+		text-align: center !important;
+	}
+	.home .search-input {
+		margin-left: 29px !important;
+	}
+	.col-sm-6.pr0.br_dotted.clearfix {
+		padding-left: 0px !important;
+		border-left: none !important;
+		padding-top: 10px;
+		border-top: 1px dotted;
+	}
+	.col-sm-6.pr0.pl0.clearfix, .col-sm-6.pr0.pl0.pt5, .br_dotted.clearfix {
+		padding-bottom: 10px;
+	}
+	.ml10 {
+		margin-left: 0px !important;
+	}
+	.sp-flr {
+		float: right;
+	}
+	.sp-fll {
+		float: left;
+	}
+	.mainIn {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.nav-tabs>li {
+		width: 50% !important;
+	}
+	.top-pill>li>a {
+		padding: 10px 7px !important;
+		font-size: 16px;
+	}
 	.visualNav {
 		width: 100%;
 	}
@@ -1333,8 +1315,6 @@ a {
 }
 
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-	
-
 	.site_desc {
 		disply: none;
 	}
@@ -2593,15 +2573,14 @@ upload button
 .admin li {
 	padding-right: 46px;
 }
-.text-white
-{
-	color:#fff;
+
+.text-white {
+	color: #fff;
 }
 
 .text-gold {
 	color: #9e8718 !important;
 }
-
 
 .text-flowerpink {
 	color: #b80c61 !important;
@@ -2628,7 +2607,7 @@ upload button
 }
 
 .bg-search {
-	background: #f7f7f6!important;
+	background: #f7f7f6 !important;
 }
 
 .bor-search {
@@ -2909,8 +2888,6 @@ aside p {
 .caption {
 	background: url(../img/home/golden_arrow.png) no-repeat top left;
 	padding-left: 15px;
-	
-	
 	margin-top: 10px;
 }
 
@@ -3001,105 +2978,104 @@ ul.show-result {
 
 .near-by {
 	width: 60px;
-	padding:5px 10px;
+	padding: 5px 10px;
 	color: #fff;
 	font-size: 12px;
 	text-align: center;
 	background: #9e8718;
 	color: #fff;
 }
-.bor-radius
-{
-	border-radius:15px;
-}
-.plan-review
-{
-	padding:10px 10px 0;
-}
-.plan-review li
-{
-	display:block;
-	color:#fff;
-}
-.search-tb>tbody>tr
-{
-	border-bottom:solid 2px #b5b5b5;
-}
-.search-tb td
-{
-	vertical-align:middle!important;
+
+.bor-radius {
+	border-radius: 15px;
 }
 
-td.days{
-    border-left: 1px dotted #b5b5b5;
+.plan-review {
+	padding: 10px 10px 0;
 }
+
+.plan-review li {
+	display: block;
+	color: #fff;
+}
+
+.search-tb>tbody>tr {
+	border-bottom: solid 2px #b5b5b5;
+}
+
+.search-tb td {
+	vertical-align: middle !important;
+}
+
+td.days {
+	border-left: 1px dotted #b5b5b5;
+}
+
 tr.date td {
-    border-left: 1px dotted #b5b5b5;
+	border-left: 1px dotted #b5b5b5;
 }
+
 table.search-tb thead {
-    vertical-align: middle!important;
-    text-align: center!important;
-    border-top: 1px solid #b5b5b5;
-    background: #f0f0f0!important;
+	vertical-align: middle !important;
+	text-align: center !important;
+	border-top: 1px solid #b5b5b5;
+	background: #f0f0f0 !important;
 }
-th.plan-name
-{
-	vertical-align:middle!important;
-	width:24%;
+
+th.plan-name {
+	vertical-align: middle !important;
+	width: 24%;
 	border-right: 1px dotted #b5b5b5;
-	
 }
-.plan-name>p>a
-{
-	font-size:17px;
-	font-weight:bold;
-	
-	
+
+.plan-name>p>a {
+	font-size: 17px;
+	font-weight: bold;
 }
-tr>.date>td
-{
-	border-top:1px dotted #b5b5b5;
+
+tr>.date>td {
+	border-top: 1px dotted #b5b5b5;
 }
-.days>span>a
-{
-	text-align:center;
-	font-size:40px;
+
+.days>span>a {
+	text-align: center;
+	font-size: 40px;
 	font-family: "Times New Roman";
-	color:#9e8718;
-	font-weight:bold;
+	color: #9e8718;
+	font-weight: bold;
 }
+
 .search-tb>thead>tr>th {
-    vertical-align: middle!important;
-    border-bottom: 1px solid #b5b5b5;
+	vertical-align: middle !important;
+	border-bottom: 1px solid #b5b5b5;
 }
-.days
-{
-	text-align:center;
+
+.days {
+	text-align: center;
 }
-.plan-time
-{
-	border-left:1px dotted #b5b5b5;
+
+.plan-time {
+	border-left: 1px dotted #b5b5b5;
 }
-.date>td
-{
-	border-top:1px dotted #b5b5b5;
+
+.date>td {
+	border-top: 1px dotted #b5b5b5;
 }
-.days ul li
-{
-	    font-size: 15px;
-    font-weight: bold;
-    color: #b80c61;
+
+.days ul li {
+	font-size: 15px;
+	font-weight: bold;
+	color: #b80c61;
 }
-.search-tb>thead>tr>th.plan-time
-{
-	border-bottom:1px dotted #b5b5b5!important;
-	
+
+.search-tb>thead>tr>th.plan-time {
+	border-bottom: 1px dotted #b5b5b5 !important;
 }
-img.tpoint
-{
-	vertical-align:bottom;
+
+img.tpoint {
+	vertical-align: bottom;
 }
-.required-search span
-{
-	line-height:24px;
+
+.required-search span {
+	line-height: 24px;
 }
