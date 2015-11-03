@@ -112,7 +112,7 @@
 
 											<div class="col-sm-6 pr0 pl0 clearfix">
 												<p class="barTitle_black mt0 sp-fll">エリア</p>
-												<div class="sp-flr">
+												<div class="sp-flr area-search">
 													<button type="button"
 														class="btn btn-default bg_gradient fw-modal"
 														data-toggle="modal" data-target=".mymodal">
@@ -397,7 +397,7 @@
 											</div>
 											<div class="col-sm-6 pr0  br_dotted clearfix">
 												<p class="barTitle_black mt0 sp-fll">高速道路</p>
-												<div class="sp-flr">
+												<div class="sp-flr road-search">
 													<button type="button"
 														class="btn btn-default fll mr10 bg_gradient fw-modal"
 														data-toggle="modal" data-target=".mymodal2">
@@ -527,9 +527,9 @@
 										</div>
 										<div class="row pb10 pt10 borderbot pt15">
 											<div class="col-sm-6 pr0 pl0 pt5 clearfix">
-												<p class="barTitle_black mt0 fll">料金・条件</p>
+												<p class="barTitle_black mt0 sp-fll">料金・条件</p>
 
-												<div class="sp-flr">
+												<div class="sp-flr price-search">
 													<div class="price_col">
 														<select name="price" class="price">
 															<option value="1" selected="selected">指定なし</option>
@@ -551,11 +551,11 @@
 
 
 											</div>
-											<div class="row play-style">
+											<div class="row">
 
 												<div class="col-sm-6 date br_dotted pr0 pt5 clearfix">
 													<p class="barTitle_black mt0 mb15 sp-fll">プレースタイル</p>
-													<div class="sp-flr">
+													<div class="sp-flr play-style">
 														<div class="checkboxbg ml10">
 															<input type="checkbox" id="lunch"> <label for="lunch"><span>昼食付き</span></label>
 														</div>
@@ -572,7 +572,7 @@
 										<div class="row pb5 pt10 ">
 											<div class="col-sm-6 pr0 pl0 clearfix">
 												<div class="barTitle_black mt5 sp-fll">スタート時間</div>
-												<div class="sp-fll clearfix">
+												<div class="sp-flr time-search clearfix">
 													<div class="col-sm-12 date pl0 pr0 pt5 clearfix">
 														<div class="checkboxbg">
 															<input type="checkbox" id="sixTime"> <label for="sixTime"><span>6時台</span></label>
@@ -851,7 +851,7 @@
 											</div>
 										</div>
 										<div class="searchhome">
-											<a href="#"><img src="img/home/search_btn.png" alt="" /></a>
+											<a href="#"><img src="img/home/search_btn.png" class="img-responsive" alt=""/></a>
 										</div>
 
 									</div>
@@ -912,7 +912,7 @@
 							<div class="planWrap bg_topgray mb20 pb20">
 								<div class="mr20 ml20">
 									<p class="barTitle_black mt20">よく行くゴルフ場の今だけの特別割引</p>
-									<div class="myplan_ttl mt20">
+									<div class="myplan_ttl mt20 pc">
 										<ul>
 											<li>～9月4日（金）</li>
 											<li>9月中のプレー</li>
@@ -1019,7 +1019,7 @@
 										</div>
 										<!-- reco Wrapper -->
 										<div class="reco mr30 shadow">
-											<div class="mygolf_plan2  pc ">
+											<div class="mygolf_plan2">
 												<h4>5月はキャディ付きプラン特集</h4>
 											</div>
 											<div class="reco_box bg-plangray">
@@ -1104,7 +1104,7 @@
 										</div>
 										<!-- reco Wrapper -->
 										<div class="reco shadow">
-											<div class="mygolf_plan3  pc ">
+											<div class="mygolf_plan3">
 												<h4>かなりお得な早めの予約プラン</h4>
 											</div>
 											<div class="reco_box bg-plangray">
@@ -1205,9 +1205,9 @@
 								<div class="mr20 ml20">
 									<p class="barTitle_black mb20">（仮タイトル）プラン特集</p>
 
-									<div class="clearfix  pc">
+									<div class="clearfix">
 										<div class="reco mr30 shadow ">
-											<div class="reco_ttl  pc ">
+											<div class="reco_ttl">
 												<span>特集A</span>
 											</div>
 											<div class="reco_box">
@@ -1313,7 +1313,7 @@
 										</div>
 										<!-- reco Wrapper -->
 										<div class="reco mr30 shadow">
-											<div class="reco_ttl  pc ">
+											<div class="reco_ttl">
 												<span>特集B</span>
 											</div>
 											<div class="reco_box">
@@ -1417,7 +1417,7 @@
 										</div>
 										<!-- reco Wrapper -->
 										<div class="reco shadow">
-											<div class="reco_ttl  pc ">
+											<div class="reco_ttl">
 												<span>特集C</span>
 											</div>
 											<div class="reco_box">

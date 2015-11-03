@@ -77,7 +77,7 @@
 									<li><a href="#">鹿児島</a></li>
 									<li><a href="#">沖縄</a></li>
 								</ul>
-
+<!-- 
 								<ul class="prefectures">
 									<li class="first"><a href="#">海外</a></li>
 									<li class="prefecturestop"><a href="#">ハワイ</a></li>
@@ -85,6 +85,7 @@
 									<li class="footer_span2"><a href="#">サイパン・ロタ</a></li>
 									<li><a href="#">アジア</a></li>
 								</ul>
+								 -->
 							</dd>
 						</dl>
 					</div>

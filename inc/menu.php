@@ -20,7 +20,15 @@
 			</div>
 
 		</div>
-		<div class="gnav nav_bggrey">
+		<div class="gnav">
+		<div class="spmenusec">
+					<p class="menu">
+						<img src="common/img/header/menu.png" alt="img">
+					</p>
+
+				</div>
+		</div>
+		<div class="gnav nav_bggrey pc">
 
 			<div class="headerIn clearfix">
 
@@ -42,12 +50,12 @@
 		</div>
 		<div class="gnav bg-black">
 			<div class="headerIn">
-				<ul class="visualNav clearfix pc">
+				<ul class="visualNav clearfix">
 					<li class="active"><a href="#">トップ</a></li>
 					<li><a href="#">ゴルフ場検索</a></li>
 					<li><a href="#">キャンペーン</a></li>
 					<li><a href="#">お気に入り</a></li>
-					<li>
+					<li class="pc">
 						<ul class="icon_block">
 							<li><a href="#">お知らせ </a></li>
 							<li><a href="#">企業情報 </a></li>
@@ -69,20 +77,6 @@
 				<li><a href="change.html">会員情報</a></li>
 				<li><a href="#">お知らせ</a></li>
 				<li><a href="#">ヘルプ</a></li>
-			</ul>
-			<ul class="ulsec clearfix">
-				<li class="spnav"><a href="#"><img
-						src="common/img/header/sp_nav01.gif" alt=""></a></li>
-				<li class="spnav"><a href="#"><img
-						src="common/img/header/sp_nav02.gif" alt=""></a></li>
-				<li class="spnav"><a href="#"><img
-						src="common/img/header/sp_nav03.gif" alt=""></a></li>
-				<li class="spnav"><a href="#"><img
-						src="common/img/header/sp_nav04.gif" alt=""></a></li>
-				<li class="spnav"><a href="#"><img
-						src="common/img/header/sp_nav05.gif" alt=""></a></li>
-				<li class="spnav"><a href="#"><img
-						src="common/img/header/sp_nav06.gif" alt=""></a></li>
 			</ul>
 		</div>
 			</div>

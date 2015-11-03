@@ -282,7 +282,7 @@ home page
 	width: 9px;
 }
 
-input#search_c_name_submit2 {
+#search_c_name_submit2 {
 	background: url(../img/home/search_btn_small.png) top center;
 	width: 169px;
 	height: 55px;
@@ -984,7 +984,7 @@ a {
     float: none!important;
 }
 .tab-content {
-    background: url(../img/home/bg_tab.jpg) no-repeat top center #eeece1;
+    background:#eeece1;
     margin-bottom: 5px;
     height: auto!important;
 }
@@ -993,10 +993,18 @@ a {
     background: #eeece1;
     padding: 0 20px;
 }
+a.btn-more.btn-shadow {
+    margin: 0 auto;
+    width: 100%;
+}
 .searchbydate
 {
 	margin:0!important;
 	padding:0!important;
+}
+.searchhome
+{
+	width:auto!important;
 }
 span.sp-fll.ml10 {
     margin-bottom: 10px;
@@ -1015,13 +1023,91 @@ div.reco {
     width: 100%!important;
     height: auto!important;
     background: url(../img/home/plan_title_green.png) no-repeat center #395610!important;
+    margin-top:20px;
+}
+.mygolf_plan2 {
+    width: 100%!important;
+    height: auto!important;
+    background: url(../img/home/plan_title_blue.png) no-repeat center #02214f!important;
+    margin-top:20px;
+}
+.mygolf_plan3 {
+    width: 100%!important;
+    height: auto!important;
+    background: url(../img/home/plan_title_brown.png) no-repeat center #4f0228!important;
+    margin-top:20px;
 }
 .reco .reco_box {
     width: 100%!important;
     overflow: hidden;
     margin-bottom: 10px;
 }
+.search-sm
+{
+	width:auto!important;
+}
+.road-search p.mb0
+{
+	margin-left:20px;
+}
+.col-sm-6.date.pl0.pr0.pt10.sp-flr {
+    max-width: 70%;
+}
+p.barTitle_black.mt0.mb15.sp-fll,.barTitle_black.mt5.sp-fll {
+    max-width: 30%;
+}
+.date .checkbox
+{
+	width:auto!important;
+}
+.row.pb20.border-fixed.clearfix {
+    margin-bottom: 20px!important;
+}
+
+.play-style,.sp-flr.area-search,.sp-fll.road-search
+{
+	max-width:67%;
+}
+.time-search,.sp-flr.road-search
+{
+	min-width:67%;
+}
+.price-search
+{
+	min-width:69%;
+}
+.ml10
+{
+	margin-left:0px!important;
+}
+.time-search .checkboxbg
+{
+	width:auto!important;
+}
+.checkboxbg.ml10 {
+    margin-left: 0px!important;
+}
+.row.borderbot.pb15.mb15{
+    padding-top: 20px!important;
+}
+
 .specialplan h3
+{
+	text-align:center!important;
+}
+.select_desc
+{
+	max-width:43%!important;
+}
+.price_col.pb20.sp-fll {
+    margin-left: 3%;
+}
+
+.reco_ttl
+{
+	width:100%!important;
+}
+.crs-box h3
 {
 	text-align:center!important;
 }
@@ -1037,9 +1123,6 @@ div.reco {
 }
 .col-sm-6.pr0.pl0.clearfix,.col-sm-6.pr0.pl0.pt5,.br_dotted.clearfix {
     padding-bottom: 10px;
-}
-.barTitle_black.mt5.sp-fll {
-    margin-right: 20px;
 }
 .ml10
 {
@@ -1063,7 +1146,7 @@ div.reco {
 }
 .top-pill>li>a
 {
-	padding: 10px 54px!important;
+	padding: 10px 31px!important;
 }
 	.visualNav {
 		width: 100%;
