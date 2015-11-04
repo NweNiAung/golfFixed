@@ -4,6 +4,9 @@
 				<h1 class="site_desc mb5">
 					『<span class="text-gold">どこよりも早い</span>空き枠』『<span class="text-gold">どこよりも安い</span>空き枠』が検索できるゴルフ場予約サイト
 				</h1>
+				<h1 class="sp mb5">
+					『<span class="text-gold">どこよりも早い</span>空き枠』『<span class="text-gold">どこよりも安い</span>空き枠』
+				</h1>
 			</div>
 			<div class="headerIn clearfix">
 

@@ -13,7 +13,7 @@
 						<li><a href="#" class="">ログアウト&nbsp;｜</a></li>
 						<li><a href="#" class="">メールアドレス/パスワード変更 &nbsp;｜</a></li>
 						<li><a href="">マニュアル&nbsp;｜</a></li>
-						<li><a href="#" class="">困ったときは（ＦＡＱ）</a></li>
+						<li><a href="../admin/faq.php" class="">困ったときは（ＦＡＱ）</a></li>
 
 
 					</ul>

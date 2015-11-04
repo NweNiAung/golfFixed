@@ -974,6 +974,9 @@ a {
 		text-align: center;
 		padding: 10px;
 	}
+	.col-sm-4.form-group.pt20.pl0 {
+    text-align: center;
+}
 	.visualNav li a {
 		font-size: 15px;
 		text-align: center;
@@ -988,6 +991,10 @@ a {
 		margin-bottom: 5px;
 		height: auto !important;
 	}
+.btn-social-icon
+{
+	margin-bottom:10px!important;
+}
 	.border-fixed {
 		border-top: 1px solid #000000;
 		background: #eeece1;
@@ -3078,4 +3085,8 @@ img.tpoint {
 
 .required-search span {
 	line-height: 24px;
+}
+.panel-body
+{
+	margin:0 auto;
 }
