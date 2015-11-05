@@ -974,7 +974,29 @@ a {
 		text-align: center;
 		padding: 10px;
 	}
-	.col-sm-4.form-group.pt20.pl0 {
+	
+	.btn-brown {
+    background: #cac3a2;
+    font-size: 20px!important;
+    margin-bottom: 10px!important;
+    padding: 10px!important;
+}
+
+.map
+{
+	width:95%;
+}
+.pl0,.pr0
+{
+padding:0 10px!important;
+}
+.col-sm-3.pl0.pr10 {
+    padding-right: 0px!important;
+}
+.padding-none {
+    padding: 0 20px !important;
+}
+.col-sm-4.form-group.pt20.pl0 {
     text-align: center;
 }
 	.visualNav li a {
@@ -3089,4 +3111,12 @@ img.tpoint {
 .panel-body
 {
 	margin:0 auto;
+}
+.btn-brown
+{
+	
+    background: #cac3a2;
+    padding: 40px 0px!important;
+    font-size: 20px!important;
+
 }
