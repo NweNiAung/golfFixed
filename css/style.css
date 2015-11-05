@@ -403,7 +403,7 @@ a : active {
 }
 
 .panel {
-	margin-bottom: 30px !important;
+	margin-bottom:0px !important;
 }
 
 .table-ttl {
@@ -978,7 +978,7 @@ a {
 	.btn-brown {
     background: #cac3a2;
     font-size: 20px!important;
-    margin-bottom: 10px!important;
+    margin-bottom: 20px!important;
     padding: 10px!important;
 }
 
@@ -990,7 +990,7 @@ a {
 {
 padding:0 10px!important;
 }
-.col-sm-3.pl0.pr10 {
+.col-sm-3.pl0.pr20 {
     padding-right: 0px!important;
 }
 .padding-none {

@@ -78,17 +78,17 @@
 						<div class="pt10 pb10">
 							<div class="col-sm-12 padding-none">
 
-								<div class="col-sm-3 pl0 pr10">
+								<div class="col-sm-3 pl0 pr20">
 									<a href="" class="btn btn-shadow btn-block btn-brown"> ゴルフ場周辺の天気 </a>
 								</div>
-								<div class="col-sm-3 pl0 pr10">
-									<a href="" class="btn btn-shadow btn-block btn-brown"> ゴルフ場周辺の天気 </a>
+								<div class="col-sm-3 pl0 pr20">
+									<a href="" class="btn btn-shadow btn-block btn-brown"> 宿・ホテル・旅館 </a>
 								</div>
-								<div class="col-sm-3 pl0 pr10">
-									<a href="" class="btn btn-shadow btn-block btn-brown"> ゴルフ場周辺の天気 </a>
+								<div class="col-sm-3 pl0 pr20">
+									<a href="" class="btn btn-shadow btn-block btn-brown"> ゴルフバッグ宅急便 </a>
 								</div>
 								<div class="col-sm-3 pl0 pr0">
-									<a href="" class="btn btn-shadow btn-block btn-brown"> ゴルフ場周辺の天気 </a>
+									<a href="" class="btn btn-shadow btn-block btn-brown">レンタカー予約 </a>
 								</div>
 
 							</div>
