@@ -30,39 +30,52 @@
 
 
 
-		<div class="container">
-			<div class="row ">
-				<div class="col-sm-4 center">
-					<img src="img/sample-img1.jpg" alt="" />
-				</div>
-				<div class="col-sm-8 center">
+		<div class="bodyIn">
+				<div class="container clearfix result">					
+					
+					<div class="bg-purple mb20 mt20">
+						<div class="bg-purple resultsec01 clearfix">
+							<div class="resultseco1in clearfix">
 
-					<h3>
-						デズモンド・ミュアヘッドの魅惑の世界<br> 広大な敷地とリンクスが故のテクニカルコース
-					</h3>
-					<ul class="icon">
-						<li class="boy3"><img src="img/boy3.png" alt="" />
-							<p>１人可</p></li>
-						<li class="camera"><img src="img/camera70.png" alt="" />
-							<p>ナイター</p></li>
-						<li class="car"><img src="img/car186.png" alt="" />
-							<p>乗用カート</p></li>
-						<li class="female"><img src="img/female94.png" alt="" />
-							<p>女性向け</p></li>
-						<li class="home"><img src="img/home168.png" alt="" />
-							<p>宿泊</p></li>
-						<li class="locator.png"><img src="img/locator.png" alt="" />
-							<p>ＧＰＳカート</p></li>
-						<li class="panel"><img src="img/panel.png" alt="" />
-							<p>練習場</p></li>
-						<li class="paper"><img src="img/paper11.png" alt="" />
-							<p>ＦＷ乗り気慧可</p></li>
-						<li class="person"><img src="img/person204.png" alt="" />
-							<p>温泉</p></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row mb20">
+								<div class="resultsecl">
+									<p>キャメルゴルフリゾート</p>
+									<ul class="clearfix">
+										<li class="bgblack">静岡県</li>
+										<li class="resulttxt01">京葉道路/蘇我ICより5km</li>
+										<li><span><img src="img/search/icon_location.png" alt=""
+												class="pr10"></span><a href="#" class="text-gold">アクセスマップ</a></li>
+									</ul>
+									<!-- /.resultsecl -->
+								</div>
+								<div class="resultsecr">
+									<div class="resultbtn">
+										<a href="#">> お気に入りに保存</a>
+									</div>
+									<ul>
+										<li>総合評価 ： <img src="img/search/4_stars.png" alt=""><span>4.0</span></li>
+									</ul>
+									<!-- /.resultsecr -->
+								</div>
+
+								<!-- /.resultseco1in -->
+							</div>
+							</div>
+							<div class="gnav bg-black">
+								<div class="headerIn">
+									<ul class="visualNav01 clearfix pc">
+										<li><a href="#">予約カレンダー</a></li>
+										<li><a href="#">コース案内</a></li>
+										<li><a href="#">ゴルフ場詳細</a></li>
+										<li><a href="#">評価・口コミ</a></li>
+										<li><a href="#">フォトギャラリー</a></li>
+										<li class="active"><a href="#">アクセス</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- /.resultsec01 -->
+						</div>
+			<div class="row mb10">
 				<div class="col-sm-12 pr0 pl0">
 					<div class="panel panel-default border-none">
 						<div class="ttl-1 bg-purple mb10">ゴルフ場からのお知らせ</div>
@@ -102,7 +115,7 @@
 				</tbody>
 			</table>
 
-			<div class="row mt20">
+			<div class="row mt20 mb10">
 				<div class="col-sm-12 pl0 pr0">
 				<div class="panel panel-default border-none">
 					

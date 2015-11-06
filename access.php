@@ -31,7 +31,52 @@
 		<?php include 'inc/menu_login.php';?>
 		</header>
 	<article>
-		<div class="container">
+	<div class="bodyIn">
+				<div class="container clearfix result">					
+					
+					<div class="bg-purple mb20 mt20">
+						<div class="bg-purple resultsec01 clearfix">
+							<div class="resultseco1in clearfix">
+
+								<div class="resultsecl">
+									<p>キャメルゴルフリゾート</p>
+									<ul class="clearfix">
+										<li class="bgblack">静岡県</li>
+										<li class="resulttxt01">京葉道路/蘇我ICより5km</li>
+										<li><span><img src="img/search/icon_location.png" alt=""
+												class="pr10"></span><a href="#" class="text-gold">アクセスマップ</a></li>
+									</ul>
+									<!-- /.resultsecl -->
+								</div>
+								<div class="resultsecr">
+									<div class="resultbtn">
+										<a href="#">> お気に入りに保存</a>
+									</div>
+									<ul>
+										<li>総合評価 ： <img src="img/search/4_stars.png" alt=""><span>4.0</span></li>
+									</ul>
+									<!-- /.resultsecr -->
+								</div>
+
+								<!-- /.resultseco1in -->
+							</div>
+							</div>
+							<div class="gnav bg-black">
+								<div class="headerIn">
+									<ul class="visualNav01 clearfix pc">
+										<li class="active"><a href="#">予約カレンダー</a></li>
+										<li><a href="#">コース案内</a></li>
+										<li><a href="#">ゴルフ場詳細</a></li>
+										<li><a href="#">評価・口コミ</a></li>
+										<li><a href="#">フォトギャラリー</a></li>
+										<li><a href="#">アクセス</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- /.resultsec01 -->
+						</div>
+		
 			<div class="row mt20 map">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d963.9671102585552!2d139.73455123118237!3d35.64286160565683!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1441767280709"
